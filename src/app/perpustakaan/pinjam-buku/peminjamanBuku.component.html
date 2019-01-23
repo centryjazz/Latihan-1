@@ -1,0 +1,51 @@
+<h4 align="center"> Peminjaman Buku </h4>
+<div class ="container">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="form-group-row">
+        <label  class = "col-sm-3 form-control-label">
+          <!--Name : {{inputInfo.name}}-->
+          ISBN :
+        </label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" [(ngModel)] ="inputInfo.isbn" id="inputIsbn" >
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="form-group-row">
+        <label class = "col-sm-3 form-control-label">
+          <!--Email: {{inputInfo.email}}-->
+          Judul Buku:
+        </label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control"  [(ngModel)] ="inputInfo.judul" id="inputEmail" >
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="form-group-row">
+        <label class = "col-sm-3 form-control-label">
+          <!--NoTelp: {{inputInfo.noTelp}}-->
+          Qty:
+        </label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control"  [(ngModel)] ="inputInfo.qty" id="inputQty" >
+        </div>
+      </div>
+
+    </div>
+    <div class="col-sm-12">
+      <div class="form-group-row">
+        <label class = "col-sm-3 form-control-label">
+          <!--NoTelp: {{inputInfo.noTelp}}-->
+          Opsi:
+        </label>
+        <div class="col-sm-8">
+          <br><button type="add" class = "btn btn-success" (click)="tambahBuku(inputQty)"> Tambah </button>
+        </div>
+      </div>
+
+
+  </div>

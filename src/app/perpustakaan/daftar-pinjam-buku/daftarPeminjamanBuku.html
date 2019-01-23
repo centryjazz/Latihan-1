@@ -1,0 +1,51 @@
+<br>
+<br>
+<table class="tble table-strip table bored table-hover table-condensed">
+	<thead>
+		<tr>
+			<th>
+				No
+			</th>
+			<th>
+				ISBN
+			</th>
+			<th>
+				Judul
+			</th>
+			<th>
+				Qty
+			</th>
+      <th>
+        Opsi :
+      </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let t of tampilBuku; let i=index" [hover]="{background:'yellow', text:'red'}" >
+			<td>{{ i+1 }}</td>
+			<td>{{ t.isbn }}</td>
+			<td>{{ t.judul }}</td>
+			<td>{{ t.qty }}</td>
+
+			<td><button (click)="showname(i)">hapus</button></td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="tble table-strip table bored table-hover table-condensed">
+  <thead>
+  <tr>
+    <th>
+      Total
+    </th>
+    <th>
+    </th>
+    <th>
+    </th>
+    <th>
+      {{ jumlah }} buku
+    </th>
+  </tr>
+  </thead>
+
+</table>
